@@ -12,9 +12,7 @@
 		<!--Невидимая на мобилке полоска-->
 		<img class="header__strip" src="image/divider.svg" alt=Strip>
 		<!--Логотип-->
-		<button type="button" class="header__button header__logo">
-			<img src="image/Group.svg" alt="Logo">
-		</button>
+		<img class="header__logo" src="image/Group.svg" alt="Logo">
 		
 		<!--Кнопки посередине-->
 		<div class="header__middle-block">
@@ -34,12 +32,16 @@
 
 		<div class="header__right-block">
 			<!--Кнопка оставить заявку-->
-			<label for="repair" class="visibility header__right-block__text-1">Оставить заявку</label>
-			<button type="button" name="repair" class="header__button header__repair"></button> 
+			<div class="header__right-block__repair">
+				<p class="visibility header__right-block__text-repair">Оставить заявку</p>
+				<button type="button" class="header__button header__repair__button"></button> 
+			</div>
 			
 			<!--Кнопка статус ремонта-->
-			<label for="check-status" class="visibility header__right-block__text-2">Статус ремонта</label>
-			<button type="button" name="check-status" class="header__button header__check-status"></button>
+			<div class="header__right-block__check-status">
+				<p class="visibility header__right-block__text-check-status">Статус ремонта</p>
+				<button type="button" class="header__button header__check-status__button"></button>
+			</div>
 		</div>
 	</header>
 
@@ -70,7 +72,7 @@
 			</div>
 
 			<div class="main__read-more">
-				<button type="button" name="read-more" class="main__read-more__button"></button>
+				<button type="button" class="main__read-more__button"></button>
 				<p class="main__read-more__text">Читать далее</p>
 			</div>
 		
