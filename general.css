@@ -98,10 +98,17 @@ body {
 	background-color: #FFFFFF;
 	white-space: nowrap;
 	padding: 10px;
+	transition: 2s;
 }
 
 .main__read-more__text:hover {
 	border-bottom: 1px solid red;
+	transition: 2s;
+}
+
+.header__button:hover {
+	opacity: 0.6;
+	transition: 2s;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -170,10 +177,6 @@ body {
 		margin-left: 30vw;
 	}
 
-	.header__button:hover {
-		 box-shadow: 0 0 15px 0 red;
-	}
-
 	/*Основная часть*/
 	.main{
 		background-color: #F8F8F8;
@@ -223,14 +226,24 @@ body {
 	}
 
 	.main__read-more__button {
-		background-image: url(image/expand.svg);
-		background-size: cover;
 		background-color: #F8F8F8;
 		border: 0;
 		width: 24px;
 		height: 24px;
 	   margin-left: 10px;
 	   align-self: center;
+	}
+
+	.main__read-more__button::before {
+		position: relative;
+		top: -5px;
+		left: 7px;
+		display: block;
+		content: "\203a \203a";
+		width: 1px;
+		height: 1px;
+		color: #41F6D7;
+		transform: rotate(90deg);
 	}
 
 	.main__read-more__text {
@@ -350,10 +363,6 @@ body {
 		margin-right: 16px;
 	}
 
-	.header__button:hover {
-		 box-shadow: 0 0 15px 0 red;
-	}
-
 	/*Основная часть*/
 	.main {
 		display: flex;
@@ -403,14 +412,24 @@ body {
 	}
 
 	.main__read-more__button {
-		background-image: url(image/expand.svg);
-		background-size: cover;
 		background-color: #F8F8F8;
 		border: 0;
 		width: 24px;
 		height: 24px;
 	   margin-left: 10px;
 	   align-self: center;
+	}
+
+	.main__read-more__button::before {
+		position: relative;
+		top: -5px;
+		left: 7px;
+		display: block;
+		content: "\203a \203a";
+		width: 1px;
+		height: 1px;
+		color: #41F6D7;
+		transform: rotate(90deg);
 	}
 
 	.main__read-more__text {
@@ -502,10 +521,6 @@ body {
 		margin-right: 16px;
 	}
 
-	.header__button:hover {
-		box-shadow: 0 0 15px 0 red;
-	}
-
 	/*Основная часть*/
 	.main {
 		display: flex;
@@ -562,14 +577,24 @@ body {
 	}
 
 	.main__read-more__button {
-		background-image: url(image/expand.svg);
-		background-size: cover;
 		background-color: #F8F8F8;
 		border: 0;
 		width: 24px;
 		height: 24px;
 	   margin-left: 10px;
 	   align-self: center;
+	}
+
+	.main__read-more__button::before {
+		position: relative;
+		top: -5px;
+		left: 7px;
+		display: block;
+		content: "\203a \203a";
+		width: 1px;
+		height: 1px;
+		color: #41F6D7;
+		transform: rotate(90deg);
 	}
 
 	.main__read-more__text {
